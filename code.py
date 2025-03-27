@@ -78,7 +78,7 @@ while True:
     cv2.imshow("Detector de Fadiga", frame)
 
     # Encerra com a tecla 'q'
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(15) & 0xFF == ord('q'):
         break
 
 # Finaliza tudo
