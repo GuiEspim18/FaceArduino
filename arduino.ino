@@ -12,7 +12,11 @@ void loop() {
         char command = Serial.read();
         if (command == "R") {
             digitalWrite(RED_PIN, HIGH);
-
+            digitalWrite(GREEN_PIN, LOW);
+        }
+        if (command == "G") {
+            digitalWrite(RED_PIN, LOW);
+            digitalWrite(GREEN_PIN, HIGH);
         }
     }
 }
